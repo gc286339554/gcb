@@ -1,0 +1,17 @@
+项目说明：
+1.gcb 是一个类似于Google Protocol Buffer的开源项目
+2.解决游戏行业网络通信的收包，解包问题，可以方便的嵌入游戏项目
+3.目前支持c++ 和 lua
+4.有着不低于 Google Protocol Buffer 的性能
+5.使用方便，特别是对lua的支持，不再需要第三方库pbc、lua-pb 的支持
+6.支持Google Protocol Buffer中除map以外的所有数据结构
+
+
+使用说明：
+1.  在 gcb_tool\op_def_files 目录下定义你的协议文件
+2.  定义好协议文件之后，运行 gcb_tool\start.bat 这个批处理
+3.  生成好对应的c++ 和 lua 文件分别在 generate_cpp 和 generate_lua 两个目录中
+
+
+如有疑问，欢迎一起探讨。
+QQ：286339554

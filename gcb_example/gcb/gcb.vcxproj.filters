@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="源文件\c++支持">
+      <UniqueIdentifier>{d3e5b199-88a8-4026-a613-adf7ac828d0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\lua支持">
+      <UniqueIdentifier>{4dd54688-8096-4b74-8e0f-2b5b6e5c4306}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\c++支持\lua_tinker">
+      <UniqueIdentifier>{310a0482-bebb-4ead-a882-3a23eea5cb40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\协议">
+      <UniqueIdentifier>{c1c13cab-6334-4d54-9085-c8e389832644}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\协议\协议定义文件">
+      <UniqueIdentifier>{f3457d4f-0b9a-4df4-922c-8757dd498b4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\协议\c++动态协议文件">
+      <UniqueIdentifier>{86cebff8-c3bc-47f2-95dc-c43cb5fb7cb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\协议\lua动态协议文件">
+      <UniqueIdentifier>{1eb0e74f-a61a-4f43-8cde-2169dec0f881}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\gcb.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\generate\op_include_all.cpp">
+      <Filter>源文件\协议\c++动态协议文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\generate\opcode_test.cpp">
+      <Filter>源文件\协议\c++动态协议文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\generate\opcode_test_01.cpp">
+      <Filter>源文件\协议\c++动态协议文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\lua_service.cpp">
+      <Filter>源文件\c++支持</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\msg_base.cpp">
+      <Filter>源文件\c++支持</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\lua_tinker\lua_tinker_ex.cpp">
+      <Filter>源文件\c++支持\lua_tinker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\lua_tinker\lua_tinker.cpp">
+      <Filter>源文件\c++支持\lua_tinker</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\generate\op_enum.h">
+      <Filter>源文件\协议\c++动态协议文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\generate\op_include_all.h">
+      <Filter>源文件\协议\c++动态协议文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\generate\opcode_test.h">
+      <Filter>源文件\协议\c++动态协议文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\generate\opcode_test_01.h">
+      <Filter>源文件\协议\c++动态协议文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\data_packet.h">
+      <Filter>源文件\c++支持</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\lua_service.h">
+      <Filter>源文件\c++支持</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\msg_base.h">
+      <Filter>源文件\c++支持</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\msg_pool.h">
+      <Filter>源文件\c++支持</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\lua_tinker\lua_tinker_ex.h">
+      <Filter>源文件\c++支持\lua_tinker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\lua_tinker\lua_tinker.h">
+      <Filter>源文件\c++支持\lua_tinker</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\src\generate\op_def.lua">
+      <Filter>源文件\协议\lua动态协议文件</Filter>
+    </None>
+    <None Include="..\src\generate\op_enum.lua">
+      <Filter>源文件\协议\lua动态协议文件</Filter>
+    </None>
+    <None Include="..\src\generate\opcode_test.lua">
+      <Filter>源文件\协议\lua动态协议文件</Filter>
+    </None>
+    <None Include="..\src\generate\opcode_test_01.lua">
+      <Filter>源文件\协议\lua动态协议文件</Filter>
+    </None>
+    <None Include="..\src\data_packet.lua">
+      <Filter>源文件\lua支持</Filter>
+    </None>
+    <None Include="..\..\gcb_tool\op_def_files\op_loader.lua">
+      <Filter>源文件\协议\协议定义文件</Filter>
+    </None>
+    <None Include="..\..\gcb_tool\op_def_files\opcode_test.lua">
+      <Filter>源文件\协议\协议定义文件</Filter>
+    </None>
+    <None Include="..\..\gcb_tool\op_def_files\opcode_test_01.lua">
+      <Filter>源文件\协议\协议定义文件</Filter>
+    </None>
+    <None Include="..\bin\lua_script\test_lua_service.lua">
+      <Filter>源文件</Filter>
+    </None>
+    <None Include="..\bin\lua_script\test_lua_service_01.lua">
+      <Filter>源文件</Filter>
+    </None>
+  </ItemGroup>
+</Project>
